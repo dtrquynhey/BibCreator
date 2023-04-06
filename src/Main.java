@@ -1,24 +1,27 @@
 import java.io.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Welcome to BibCreator!");
 
-        //Scanner scanner = new Scanner(System.in);
+        Scanner scanner = null;
+        String str_file = null;
+        boolean flag = true;
 
         for (int i = 1; i <= 10; i++) {
-            String str_file = "Latex" + i + ".bib";
-            File myFile = new File(str_file);
-            if (!myFile.exists()) {
+            try {
+                str_file = "Latex" + i + ".bib";
+                File myFile = new File(str_file);
+                scanner = new Scanner(myFile);
+                
+            } catch (FileNotFoundException e) {
                 System.out.printf("Could not open input file %s for reading.", str_file);
                 System.out.println("\nPlease check if file exists! Program will terminate after closing any opened file");
-                break;
-            } else {
-                String ieeeFile = "IEEE" + i + ".json";
-                String acmFile = "ACM" + i + ".json";
-                String njFile = "NJ" + i + ".json";
-                if (!(createFile(ieeeFile) && createFile(acmFile) && createFile(njFile))) {
-                    deleteCreatedFile();
+                flag = false;
+            } finally {
+                if (scanner != null) {
+                    scanner.close();
                 }
             }
         }
