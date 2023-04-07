@@ -3,10 +3,12 @@ package basic_classes;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class FileManagement {
 
+    static File[] allFiles = new File[10];
     public static boolean CheckInputFiles(){
         Scanner scanner = null;
         String str_file = null;
@@ -34,11 +36,11 @@ public class FileManagement {
 
     public static boolean createFiles(String str_file) {
         try {
-            PrintWriter writer = new PrintWriter(new File(str_file));
+            PrintWriter writer = new PrintWriter(str_file);
             writer.close();
             return true;
         } catch (FileNotFoundException e) {
-            System.out.printf("Could not open/create file $s.", str_file);
+            System.out.println("Could not open/create file " + str_file);
             return false;
         }
     }
@@ -50,4 +52,33 @@ public class FileManagement {
             file.delete();
         }
     }
+
+    public static void processFilesForValidation(File[] files) {
+        for (int i = 1; i <= files.length; i++) {
+            //clearArticleList();
+
+            // READ FROM FILE GOES HERE
+            
+            int fileNum = i;
+            //writeToIEEE(i, files);
+        }
+    }
+
+    private static void writeToIEEE(int num, ArrayList<Article> articles) {
+        String file_str = "IEEE" + num + ".json";
+        try {
+            PrintWriter writer = new PrintWriter(file_str);
+            for (Article a : articles) {
+                String article = formatIEEE(a);
+                writer.println(article);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private String formatIEEE(Article a) {
+        return "";
+    }
+
 }
