@@ -58,7 +58,7 @@ public class FileManagement {
             //clearArticleList();
 
             // READ FROM FILE GOES HERE
-            
+
             int fileNum = i;
             //writeToIEEE(i, files);
         }
@@ -77,7 +77,7 @@ public class FileManagement {
         }
     }
 
-    private String formatIEEE(Article a) {
+    private static String formatIEEE(Article a) {
         return "";
     }
 
