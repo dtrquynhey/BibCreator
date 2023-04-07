@@ -1,30 +1,23 @@
 import java.io.*;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         System.out.println("Welcome to BibCreator!");
-
-        //Scanner scanner = new Scanner(System.in);
-
-        for (int i = 1; i <= 10; i++) {
-            String str_file = "Latex" + i + ".bib";
-            File myFile = new File(str_file);
-            if (!myFile.exists()) {
-                System.out.printf("Could not open input file %s for reading.", str_file);
-                System.out.println("\nPlease check if file exists! Program will terminate after closing any opened file");
-                break;
-            } else {
-                String ieeeFile = "IEEE" + i + ".json";
-                String acmFile = "ACM" + i + ".json";
-                String njFile = "NJ" + i + ".json";
-                if (!(createFile(ieeeFile) && createFile(acmFile) && createFile(njFile))) {
+        if (CheckInputFiles()) {
+            for (int i = 1; i <= 10; i++) {
+                if (!(createFiles("IEEE"+ i + ".json") &&
+                        createFiles("ACM"+ i + ".json") &&
+                        createFiles("NJ"+ i + ".json"))) {
                     deleteCreatedFile();
                 }
             }
         }
+
+
     }
 
-    public static boolean createFile(String str_file) {
+    public static boolean createFiles(String str_file) {
         try {
             PrintWriter writer = new PrintWriter(new File(str_file));
             writer.close();
@@ -37,14 +30,35 @@ public class Main {
 
     public static void deleteCreatedFile() {
         File folder = new File(".");
-        File[] listOfFiles = folder.listFiles(new FilenameFilter() {
-            @Override
-            public boolean accept(File dir, String name) {
-                return name.endsWith(".json");
-            }
-        });
+        File[] listOfFiles = folder.listFiles((dir, file_name) -> file_name.endsWith(".json"));
         for (File file : listOfFiles) {
             file.delete();
         }
+    }
+
+    public static boolean CheckInputFiles(){
+        Scanner scanner = null;
+        String str_file = null;
+
+        for (int i = 1; i <= 10; i++) {
+            try {
+                str_file = "Latex" + i + ".bib";
+                File myFile = new File(str_file);
+                scanner = new Scanner(myFile);
+                //add to the static array in FileManagement
+
+            } catch (FileNotFoundException e) {
+                System.out.printf("Could not open input file %s for reading.", str_file);
+                System.out.println("\nPlease check if file exists! Program will terminate after closing any opened file");
+                return false;
+
+            } finally {
+                if (scanner != null) {
+                    scanner.close();
+                }
+            }
+        }
+        return true;
+
     }
 }
