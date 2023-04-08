@@ -11,7 +11,7 @@ public class FileInvalidException extends Exception{
                 "\n============================" +
                 "\nProblem detected with input file: " + str_file +
                 "\nFile is Invalid: Field \"" + errorField + "\" is empty." +
-                " Processing stopped at this point. Other empty fields may be present as well!");
+                " Processing stopped at this point. Other empty fields may be present as well!\n");
     }
 
     @Override

@@ -7,7 +7,6 @@ public class Article {
 
     public String id, author, journal, title, volume, pages, keywords, doi, issn, month, year, number;
 
-
     public static ArrayList<Article> allArticlesInFile = new ArrayList<>();
 
     public Article(String id, String author, String journal, String title, String volume,
