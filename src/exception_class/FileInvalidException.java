@@ -6,8 +6,12 @@ public class FileInvalidException extends Exception{
                 "(i.e. month={}, title={}, etc.)");
     }
 
-    public FileInvalidException(String message) {
-        super(message);
+    public FileInvalidException(String str_file,  String errorField) {
+        super("Error: Detected Empty Field!" +
+                "\n============================" +
+                "\nProblem detected with input file: " + str_file +
+                "\nFile is Invalid: Field \"" + errorField + "\" is empty." +
+                " Processing stopped at this point. Other empty fields may be present as well!");
     }
 
     @Override

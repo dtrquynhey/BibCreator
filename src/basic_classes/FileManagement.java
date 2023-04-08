@@ -1,15 +1,18 @@
 package basic_classes;
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
+import exception_class.FileInvalidException;
+
+import java.io.*;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class FileManagement {
 
     static File[] allFiles = new File[10];
-    public static boolean CheckInputFiles(){
+
+    public static boolean CheckInputFiles() {
         Scanner scanner = null;
         String str_file = null;
 
@@ -45,40 +48,115 @@ public class FileManagement {
         }
     }
 
+    public static void deleteCreatedFile(int num) {
+        File files = new File(".");
+        String strNum = Integer.toString(num);
+        File[] listOfFiles = files.listFiles((dir, file_name) -> file_name.endsWith(strNum + ".json"));
+        if (listOfFiles != null) {
+            for (File file : listOfFiles) {
+                file.delete();
+            }
+        }
+    }
+
     public static void deleteCreatedFile() {
-        File folder = new File(".");
-        File[] listOfFiles = folder.listFiles((dir, file_name) -> file_name.endsWith(".json"));
-        for (File file : listOfFiles) {
-            file.delete();
+        File files = new File(".");
+        File[] listOfFiles = files.listFiles((dir, file_name) -> file_name.endsWith(".json"));
+        if (listOfFiles != null) {
+            for (File file : listOfFiles) {
+                file.delete();
+            }
         }
     }
 
     public static void processFilesForValidation(File[] files) {
+
+        Article.clearArticleList();
         for (int i = 1; i <= files.length; i++) {
-            //clearArticleList();
+            try {
+                String fileName = "Latex" + i + ".bib";
+                BufferedReader reader = new BufferedReader(new FileReader(fileName));
+                String line;
+                int counter;
+                boolean flag;
+                while ((line = reader.readLine()) != null) {
+                    line = line.trim();
 
-            // READ FROM FILE GOES HERE
+                    if (line.isEmpty()) {
+                        continue;
+                    }
 
-            int fileNum = i;
-            //writeToIEEE(i, files);
-        }
-    }
+                    if (line.contains("@")) {
+                        StringBuilder sbArticle = new StringBuilder();
+                        counter = 1;
+                        while (counter != 0) {
+                            line = reader.readLine().trim();
+                            sbArticle.append(line);
+                            if (line.contains("{")) {
+                                counter++;
+                            }
+                            if (line.contains("}")) {
+                                counter--;
+                            }
+                        }
+                        String strArticle = sbArticle.substring(0, sbArticle.length() - 1);
 
-    private static void writeToIEEE(int num, ArrayList<Article> articles) {
-        String file_str = "IEEE" + num + ".json";
-        try {
-            PrintWriter writer = new PrintWriter(file_str);
-            for (Article a : articles) {
-                String article = formatIEEE(a);
-                writer.println(article);
+                        String[] fields = strArticle.trim().split(",\n", 5);
+                        String id = fields[0];
+
+                        Map<String, String> articleFields = new HashMap<>();
+                        for (int j = 1; j < fields.length; j++) {
+                            String[] kv = fields[j].trim().split("=");
+                            kv[0] = kv[0].trim();
+                            kv[1] = kv[1].trim();
+                            kv[1] = kv[1].substring(1, kv[1].length() - 1).trim();
+                            articleFields.put(kv[0], kv[1]);
+                            if (kv[1].isEmpty()) {
+                                throw new FileInvalidException(fileName, kv[0]);
+                            }
+                        }
+
+                        Article article = new Article(id, articleFields.get("author"), articleFields.get("journal"),
+                                articleFields.get("title"), articleFields.get("volume"), articleFields.get("pages"),
+                                articleFields.get("keywords"), articleFields.get("doi"), articleFields.get("ISSN"),
+                                articleFields.get("month"), articleFields.get("year"), articleFields.get("number"));
+
+                        Article.allArticlesInFile.add(article);
+                    }
+                }
+                reader.close();
+            } catch (FileInvalidException e) {
+                System.out.println(e.getMessage());
+                deleteCreatedFile(i);
+            } catch (IOException e) {
+                System.out.println(e.getMessage());
+
+
+                for (Article ar : Article.allArticlesInFile) {
+
+                    System.out.println("Id:" + ar.id + "Author:" + ar.author + "Year:" + ar.year);
+                    System.out.println("++++++++++++++++++++++++++++++++");
+                }
+                //int fileNum = i;
+                //writeToIEEE(i, );
             }
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         }
     }
+        private static void writeToIEEE ( int num, ArrayList<Article > articles){
+            String file_str = "IEEE" + num + ".json";
+            try {
+                PrintWriter writer = new PrintWriter(file_str);
+                for (Article a : articles) {
+                    String article = formatIEEE(a);
+                    writer.println(article);
+                }
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            }
+        }
 
-    private static String formatIEEE(Article a) {
-        return "";
+        private static String formatIEEE (Article a){
+            return "";
+        }
+
     }
-
-}
