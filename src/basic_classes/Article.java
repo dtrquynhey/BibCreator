@@ -7,7 +7,8 @@ public class Article {
 
     private String id, author, journal, title, volume, pages, keywords, doi, issn, month, year, number;
 
-    public static ArrayList<Article> allArticlesInFile = new ArrayList<>();
+    private static int  articleNum = 0;
+
 
     public Article(String id, String author, String journal, String title, String volume,
                    String pages, String keywords, String doi, String issn, String month,
@@ -24,17 +25,9 @@ public class Article {
         this.month = month;
         this.year = year;
         this.number = number;
-
+        Article.articleNum++;
     }
 
-    public static boolean validateAnArticle() {
-
-        return true;
-    }
-
-    public static void clearArticleList() {
-        Article.allArticlesInFile.clear();
-    }
 
 
     public String getId() {
@@ -84,6 +77,15 @@ public class Article {
     public String getNumber() {
         return number;
     }
+
+    public static int getArticleNum() {
+        return articleNum;
+  }
+
+    public static void resetArticleNum() {
+        articleNum = 0;
+    }
 }
+
 
 

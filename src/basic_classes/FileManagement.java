@@ -71,9 +71,16 @@ public class FileManagement {
 
     public static void processFilesForValidation(File[] files) {
         for (int i = 1; i <= files.length; i++) {
-            Article.clearArticleList();
+            Article.resetArticleNum(); //Start counting article from 0 in the new file
+
+            //Declare print Writer for Json extensions
             PrintWriter writerIEEE = null;
+            PrintWriter writerACM = null;
+             PrintWriter writerNJ = null;
+
+             //Declare reading
             BufferedReader reader = null;
+
             try {
                 // files name for reading and writing
                 String fileName = "Latex" + i + ".bib";
@@ -83,8 +90,8 @@ public class FileManagement {
 
                 //Writing json files
                  writerIEEE = new PrintWriter(fileNameIEEE);
-//                PrintWriter writerACM = new PrintWriter(fileNameACM);
-//                PrintWriter writerNJ = new PrintWriter(fileNameNJ);
+                 writerACM = new PrintWriter(fileNameACM);
+                 writerNJ = new PrintWriter(fileNameNJ);
 
                 //Reading bib files
                 reader = new BufferedReader(new FileReader(fileName));
@@ -111,7 +118,7 @@ public class FileManagement {
                             if (line.contains("{")) {  // Increase counter if there's opening Brace
                                 counter++;
                             }
-                            if (line.contains("}")) { // decrease counter if there's opening Brace
+                            if (line.contains("}")) { // decrease counter if there's closing Brace
                                 counter--;
                                 if (counter == 0) {
                                     break;
@@ -131,19 +138,30 @@ public class FileManagement {
                                 articleFields.get("title"), articleFields.get("volume"), articleFields.get("pages"),
                                 articleFields.get("keywords"), articleFields.get("doi"), articleFields.get("ISSN"),
                                 articleFields.get("month"), articleFields.get("year"), articleFields.get("number"));
-                        Article.allArticlesInFile.add(article);
+
+                        //format all the articles
                         String formattedInIEEE = formatIEEE(article);
+                        String formattedInACM = formatACM(article);
+                        String formattedInNJ = formatNJ(article);
+
+                        //Write to Json files
                         writeToJson(writerIEEE,formattedInIEEE);
+                        writeToJson(writerACM,formattedInACM);
+                        writeToJson(writerNJ,formattedInNJ);
 
 
 
                     }
                 }
                 writerIEEE.close();
+                writerACM.close();
+                writerNJ.close();
                 reader.close();
             } catch (FileInvalidException e) {
                 System.out.println(e.getMessage());
                 writerIEEE.close();
+                writerACM.close();
+                writerNJ.close();
                 deleteCreatedFile(i);
             } catch (IOException e) {
                 System.out.println(e.getMessage());
@@ -185,9 +203,9 @@ public class FileManagement {
         return strAuthor + ". " + strTitle + ", " +  strJournal + ", " + strVolume + ", " + strNumber + ", " + strPages
                 + ", " + strMonthAndYear + ".";
         }
-    private static String formatACM(Article a, int aNum) {
+    private static String formatACM(Article a) {
         //Add Article Number
-        String StrarticleNum = "[" + aNum + "]";
+        String StrArticleNum = "[" + Article.getArticleNum() + "]";
 
         //Add Author
         String[] authors = a.getAuthor().split(" and ");
@@ -214,8 +232,27 @@ public class FileManagement {
         //Add DOI
         String strDOI =  "DOI:https://doi.org/"+ a.getDoi();
 
-        return StrarticleNum + "\t" + strAuthors + ". " + strYear + ". " + strTitle + ". " + strJournal + ". " +
-                strVolume + ", " + strNumAndYear + ", " + strPages + ". " + strDOI;
+        return StrArticleNum + "\t\t" + strAuthors + ". " + strYear + ". " + strTitle + ". " + strJournal + ". " +
+                strVolume + ", " + strNumAndYear + ", " + strPages + ". " + strDOI + ".";
+    }
+
+    private static String formatNJ(Article a) {
+        //Add author
+        String strAuthor = a.getAuthor().replace("and","&");
+
+        //Add title
+        String strTitle = a.getTitle();
+
+        //Add journal
+        String strJournal = a.getJournal();
+
+        //Add volume
+        String strVolume = a.getVolume();
+
+        //Add pages and Year
+        String strPagesAndYear = a.getPages() + "(" + a.getYear() + ")";
+
+        return strAuthor + ". " + strTitle + ". " +  strJournal + ". " + strVolume + ", " + strPagesAndYear + ".";
     }
 
 }
