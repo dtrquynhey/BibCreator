@@ -25,6 +25,8 @@ public class Main {
             processFilesForValidation(allFiles);
         }
 
-
+        for(Article ar: Article.allArticlesInFile){
+            System.out.println("The Doi is " + ar.doi  + " The author is " + ar.author);
+        }
     }
 }
