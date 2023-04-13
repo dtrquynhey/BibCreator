@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1acaf439-a05d-45e7-a11b-a7441fad0f38" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ACM1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ACM10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ACM2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ACM3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ACM4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ACM5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ACM6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ACM7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ACM8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ACM9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BibCreator.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IEEE1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IEEE10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IEEE2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IEEE3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IEEE4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IEEE5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IEEE6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IEEE7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IEEE8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/IEEE9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Latex1.bib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Latex10.bib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Latex2.bib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Latex3.bib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Latex4.bib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Latex5.bib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Latex6.bib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Latex7.bib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Latex8.bib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Latex9.bib" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NJ1.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NJ10.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NJ2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NJ3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NJ4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NJ5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NJ6.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NJ7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NJ8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NJ9.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basic_classes/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic_classes/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basic_classes/FileManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic_classes/FileManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exception_class/FileInvalidException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception_class/FileInvalidException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test_package/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_package/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2O7mFDWTGWonSEToSEgfGwBhgwA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1acaf439-a05d-45e7-a11b-a7441fad0f38" name="Changes" comment="" />
+      <created>1680919889708</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1680919889708</updated>
+      <workItem from="1680919891008" duration="284000" />
+      <workItem from="1681240389444" duration="1220000" />
+      <workItem from="1681346029251" duration="3261000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
