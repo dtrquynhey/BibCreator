@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5303ecc6-bf37-4539-9ac3-88be5ef5423e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/exception_classes/FileNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Latex1.bib" beforeDir="false" afterPath="$PROJECT_DIR$/Latex1.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BibCreator/basic_classes/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BibCreator/basic_classes/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BibCreator/basic_classes/FileManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BibCreator/basic_classes/FileManagement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BibCreator/exception_class/FileInvalidException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BibCreator/test_package/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BibCreator/test_package/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basic_classes/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic_classes/Article.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/basic_classes/FileManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic_classes/FileManagement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exception_class/FileInvalidException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception_classes/FileInvalidException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test_package/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_package/Main.java" afterDir="false" />
+    </list>
+    <list id="f2194645-418f-4e21-a8ae-7164162321f3" name="Changes by Sizar" comment="">
+      <change beforePath="$PROJECT_DIR$/Latex4.bib" beforeDir="false" afterPath="$PROJECT_DIR$/Latex4.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Latex8.bib" beforeDir="false" afterPath="$PROJECT_DIR$/Latex8.bib" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Palette2">
     <group name="Swing">
       <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
@@ -120,5 +153,35 @@
         <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
       </item>
     </group>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showScratchesAndConsoles" value="false" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="BibCreator" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="test_package.Main" />
+      <module name="BibCreator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5303ecc6-bf37-4539-9ac3-88be5ef5423e" name="Changes" comment="" />
+      <created>1681436366937</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1681436366937</updated>
+      <workItem from="1681436370387" duration="12340000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
