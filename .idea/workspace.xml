@@ -4,96 +4,180 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1acaf439-a05d-45e7-a11b-a7441fad0f38" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ACM1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ACM10.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ACM2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ACM3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ACM4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ACM5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ACM6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ACM7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ACM8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ACM9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/BibCreator.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IEEE1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IEEE10.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IEEE2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IEEE3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IEEE4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IEEE5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IEEE6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IEEE7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IEEE8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/IEEE9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Latex1.bib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Latex10.bib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Latex2.bib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Latex3.bib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Latex4.bib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Latex5.bib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Latex6.bib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Latex7.bib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Latex8.bib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Latex9.bib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NJ1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NJ10.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NJ2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NJ3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NJ4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NJ5.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NJ6.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NJ7.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NJ8.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NJ9.json" beforeDir="false" />
+    <list default="true" id="5303ecc6-bf37-4539-9ac3-88be5ef5423e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/exception_classes/FileNotFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Latex1.bib" beforeDir="false" afterPath="$PROJECT_DIR$/Latex1.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BibCreator/basic_classes/Article.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BibCreator/basic_classes/Article.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BibCreator/basic_classes/FileManagement.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BibCreator/basic_classes/FileManagement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BibCreator/exception_class/FileInvalidException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/BibCreator/test_package/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/BibCreator/test_package/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/basic_classes/Article.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic_classes/Article.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/basic_classes/FileManagement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/basic_classes/FileManagement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exception_class/FileInvalidException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception_class/FileInvalidException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exception_class/FileInvalidException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception_classes/FileInvalidException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test_package/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test_package/Main.java" afterDir="false" />
+    </list>
+    <list id="f2194645-418f-4e21-a8ae-7164162321f3" name="Changes by Sizar" comment="">
+      <change beforePath="$PROJECT_DIR$/Latex4.bib" beforeDir="false" afterPath="$PROJECT_DIR$/Latex4.bib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Latex8.bib" beforeDir="false" afterPath="$PROJECT_DIR$/Latex8.bib" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
+  <component name="Palette2">
+    <group name="Swing">
+      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
+      </item>
+      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.svg" removable="false" auto-create-binding="false" can-attach-label="true">
+        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
+        <initial-values>
+          <property name="text" value="Button" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="RadioButton" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="CheckBox" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="Label" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.svg" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
+          <preferred-size width="-1" height="20" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.svg" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.svg" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+      </item>
+    </group>
   </component>
-  <component name="ProjectId" id="2O7mFDWTGWonSEToSEgfGwBhgwA" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="RunManager">
+    <configuration name="BibCreator" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="test_package.Main" />
+      <module name="BibCreator" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1acaf439-a05d-45e7-a11b-a7441fad0f38" name="Changes" comment="" />
-      <created>1680919889708</created>
+      <changelist id="5303ecc6-bf37-4539-9ac3-88be5ef5423e" name="Changes" comment="" />
+      <created>1681436366937</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1680919889708</updated>
-      <workItem from="1680919891008" duration="284000" />
-      <workItem from="1681240389444" duration="1220000" />
-      <workItem from="1681346029251" duration="3261000" />
+      <updated>1681436366937</updated>
+      <workItem from="1681436370387" duration="12340000" />
     </task>
     <servers />
   </component>

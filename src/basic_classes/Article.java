@@ -5,9 +5,10 @@ import java.util.ArrayList;
 public class Article {
     //Attributes
 
-    public String id, author, journal, title, volume, pages, keywords, doi, issn, month, year, number;
+    private String id, author, journal, title, volume, pages, keywords, doi, issn, month, year, number;
 
-    public static ArrayList<Article> allArticlesInFile = new ArrayList<>();
+    private static int  articleNum = 0;
+
 
     public Article(String id, String author, String journal, String title, String volume,
                    String pages, String keywords, String doi, String issn, String month,
@@ -24,15 +25,64 @@ public class Article {
         this.month = month;
         this.year = year;
         this.number = number;
-
+        Article.articleNum++;
     }
 
-    public static boolean validateAnArticle() {
-
-        return true;
+    public String getId() {
+        return id;
     }
 
-    public static void clearArticleList() {
-        Article.allArticlesInFile.clear();
+    public String getAuthor() {
+        return author;
+    }
+
+    public String getJournal() {
+        return journal;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public String getVolume() {
+        return volume;
+    }
+
+    public String getPages() {
+        return pages;
+    }
+
+    public String getKeywords() {
+        return keywords;
+    }
+
+    public String getDoi() {
+        return doi;
+    }
+
+    public String getIssn() {
+        return issn;
+    }
+
+    public String getMonth() {
+        return month;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public static int getArticleNum() {
+        return articleNum;
+    }
+
+    public static void resetArticleNum() {
+        articleNum = 0;
     }
 }
+
+
