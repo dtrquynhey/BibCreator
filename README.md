@@ -12,8 +12,9 @@ BibCreator is a Java application designed for processing BibTeX files, which are
   - [Running the Application](#running-the-application)
   - [Processing BibTeX Files](#processing-bibtex-files)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
 - [License](#license)
+- [Acknowledgements](#acknowledgements)
+
 
   
 ## Getting Started
@@ -81,11 +82,11 @@ The project directory is structured as follows:
 - `NJ1`, `NJ2`, etc.: Output NJ JSON files.
 
 
-## Contributing
-<a name="contributing"></a>
-Contributions to this project are welcome. If you encounter issues, have suggestions for improvements, or want to add features, please feel free to create a pull request or open an issue in this repository.
-
-
 ## License
 <a name="license"></a>
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+## Acknowledgments
+<a name="acknowledgements"></a>
+Special thanks to @SizarStass for their valuable contributions to this project.
