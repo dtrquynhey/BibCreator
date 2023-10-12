@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import static basic_classes.FileManagement.*;
 
-public class Main {
+public class BibCreator {
     public static void main(String[] args) {
 
         File[] allFiles = new File[10];
